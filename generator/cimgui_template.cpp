@@ -7,6 +7,9 @@
 #error "IMGUI_FREETYPE should not be defined without freetype generated cimgui"
 #endif
 #endif
+struct ImGuiContext;
+static thread_local ImGuiContext* MyImGuiTLS = nullptr;
+#define GImGui MyImGuiTLS
 #include "./imgui/imgui.h"
 #ifdef IMGUI_ENABLE_FREETYPE
 #include "./imgui/misc/freetype/imgui_freetype.h"

@@ -13,6 +13,7 @@
 
 int main(void)
 {
+  printf("Running Test");
   assert(igDebugCheckVersionAndDataLayout(igGetVersion(), sizeof(ImGuiIO), sizeof(ImGuiStyle),
                                           sizeof(ImVec2), sizeof(ImVec4), sizeof(ImDrawVert),
                                           sizeof(ImDrawIdx)));
